@@ -38,7 +38,7 @@
                         labels: ['Area', 'Bidang', 'Status'],
                         datasets: [{
                             label: '# of Votes',
-                            data: [{{$tutor->area}}],
+                            data: [3],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',
@@ -83,6 +83,9 @@
                     aria-expanded="false" aria-controls="collapseExample">
                 Show Table
             </button>
+            <a href="{{ url('print_pdf') }}" class="btn btn-primary mb-3">
+                Cetak
+            </a>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                     <table class="table table-bordered">

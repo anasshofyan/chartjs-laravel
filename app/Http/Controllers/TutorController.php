@@ -19,6 +19,14 @@ class TutorController extends Controller
         return view('admin.tutor', $params);
     }
 
+    public function print_pdf()
+    {
+        $tutor = Tutors::all();
+
+
+        $pdf = PDF::loadview('admin.cetak', ['tutor'=>$tutor]);
+        return  $pdf->stream('database.pdf');
+    }
 
 
 }
