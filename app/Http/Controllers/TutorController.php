@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use PDF;
 use App\Tutors;
 
 class TutorController extends Controller
@@ -17,5 +18,7 @@ class TutorController extends Controller
 
         return view('admin.tutor', $params);
     }
+
+
 
 }

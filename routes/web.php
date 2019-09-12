@@ -17,3 +17,4 @@ Route::group(['namespace' => 'Web'], function () {
 });
 
 Route::get('/', 'TutorController@index');
+Route::get('/print_pdf', 'TutorController@print_pdf');
